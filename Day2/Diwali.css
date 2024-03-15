@@ -1,0 +1,43 @@
+.div1{
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-bg.png");
+    font-family:'Ceveat';
+    height: 40vh;
+    background-size: cover;
+    color: rgb(255, 10, 10);
+    font-size: 30px;
+    padding: 20px;
+}   
+
+.div2{
+    background-color: rgb(106, 24, 131);
+    padding: 10px;/* this is used because to give spacing between the 
+    div1 and the box content if we use margin then the code will generate a whitespace between the 
+    div1 and flex content box  */
+    /* Remove the PADDING TO SEE THE CHANGE */
+    width: 50vw;/* we cant apply the width same when we are dealing with the flex content
+    because strat takes 33.33% of area and end takes 33.33% as the center with 33.33% but if the use strat
+    and center only the strat takes 66.66% and end takes only the 33.33% this is happpens when you give 
+    100vw this happens TRY GIVING width 100vw by default it will not occupy total arear 
+    TRY REMOVING WIDTH PROPERTY*/
+    height: 100vh;
+}
+
+.div3{
+   
+    background-color: white;
+    padding: 19px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size:20px;
+
+    text-align: center;
+}
+
+.div3-img{
+    width: 100px;
+
+}
+
+.div3-h1{
+    font-size: 50px;
+}
