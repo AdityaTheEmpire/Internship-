@@ -1,0 +1,82 @@
+body{
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:cursive;
+}
+
+form{
+    background-color: aliceblue;
+    border-radius: 13px;
+    padding:20px;
+    /* display: flex;
+    flex-direction: column; *//* this is given because all the elements inthe form will be arrenged in line */
+    box-shadow: 0 4px 8px;
+    margin: 10px;/* this gives margin when it is used in different size of screens */
+}
+
+.text{
+display: block;/* this is used make a element bolck element which occupies entire width  */
+width: 100%;/* this is to cover width of the form box supporting to the block property */
+box-sizing: border-box;
+font-size: 25px;
+text-align: center;
+padding: 10px;
+border: solid 4px green;
+color: green;
+font-family: cursive;
+border-radius: 10px;
+}
+
+.submit{
+    display: block;/* this is used make a element bolck element which occupies entire width  */
+width: 100%;/* this is to cover width of the form box supporting to the block property */
+box-sizing: border-box;
+font-size: 25px;
+text-align: center;
+padding: 10px;
+border: solid 4px green;
+font-family: cursive;
+background-color: green;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(.9);
+}
+
+
+ form h4{
+    color: green;
+    font-family: cursive;
+    text-align: end;
+}/*
+
+form h1{
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+form .text{
+    font-size:28px;
+    text-align: center;
+  
+    border-color: green;
+    border-radius: 2px;
+    border-width: 3px;
+    border-style: solid;
+}
+form .submit{
+    font-size:28px;
+    text-align: center;
+    border-color: green;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 10px;
+    background-color: green;
+} */
