@@ -1,0 +1,46 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(213, 213, 246);
+}
+
+.btn{
+    font-family: sans-serif;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, .4);
+    background-color: pink ;
+    padding: 20px 40px;
+    overflow: hidden;
+    position: relative;/* it is relative to normal positon. relative give a leaves a space at the sample position */
+}
+
+.btn::before{
+    content: "";
+    position: absolute;/* relative with the the parent. it starts with the starting of the parent class when we use top and other directional properties */
+    /* position: fixed; relative with the brower window.we use top and other directional properties but it is used to create chat button like virtual assitent or fix is unconditional*/
+    /* postion: stickey; it same as fixed but it is use when a particular condition is true and it is used to for example if u give the to value 0px for stickey then when ever the element reaches the top 0px when u scroll the it gets sticked to that positon go to top buttons bottom is 13px */
+    background-color: orangered;
+    width: 50px;
+    height: 50px;
+    left: var(--Xpos);
+    top: var(--Ypos);
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    transition: width .5s, height .5s;
+}
+.btn span{
+    position: relative;
+    z-index: 1;
+}
+.btn:hover::before{
+    width: 300px;
+    height:  300px;
+}
